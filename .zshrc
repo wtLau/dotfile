@@ -7,7 +7,10 @@ ZSH_THEME="agnoster"
 zstyle ':omz:update' mode auto      
 # Uncomment the following line to change how often to auto-update (in days).
 zstyle ':omz:update' frequency 13
+
+## Plugins 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
 # Sourcing zsh-vi-mode
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source $ZSH/oh-my-zsh.sh
