@@ -74,7 +74,7 @@ brew "zsh-vi-mode"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
 # Comic Shanns mono nerd-font
-cask font-comic-shanns-mono-nerd-font
+cask "font-comic-shanns-mono-nerd-font"
 # Calendar for professionals and teams
 cask "cron"
 # Collaborative team software
