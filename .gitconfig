@@ -18,3 +18,5 @@
 	email = 26396307+wtLau@users.noreply.github.com
 [pull]
 	rebase = true
+[author]
+	name = Brian
