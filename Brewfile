@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
+tap "homebrew/cask-fonts" 
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Cryptography and SSL/TLS Toolkit
@@ -72,6 +73,8 @@ brew "zsh-syntax-highlighting"
 brew "zsh-vi-mode"
 # A simple terminal UI for git commands, written in Go
 brew "jesseduffield/lazygit/lazygit"
+# Comic Shanns mono nerd-font
+cask font-comic-shanns-mono-nerd-font
 # Calendar for professionals and teams
 cask "cron"
 # Collaborative team software
