@@ -16,3 +16,5 @@
 [user]
 	name = wtlau
 	email = 26396307+wtLau@users.noreply.github.com
+[pull]
+	rebase = true
