@@ -11,6 +11,7 @@ zstyle ':omz:update' frequency 13
 ## Plugins 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
+source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Sourcing zsh-vi-mode
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source $ZSH/oh-my-zsh.sh
@@ -31,12 +32,14 @@ DOCUMENTS=$HOME/Documents/
 alias nv="nvim"
 alias vscode="/opt/homebrew/bin/code"
 alias doc=$DOCUMENTS
+alias dotfile="~/.dotfiles/"
 
 # Filepath
 alias code="$HOME/Documents/Codebases/"
-alias zshconfig="cd ~/ && nv ./.zshrc"
-alias nvconfig="cd ~/.config/nvim && nv ."
+alias zshconfig="cd $dotfile && nv ./.zshrc"
+alias nvconfig="cd ~/.config/nvim/lua/user && nv ."
 alias ohmyzsh="nv ~/.oh-my-zsh"
+alias notes="cd ~/Documents/notes/ && nv ."
 
 ## Mini Apps
 # Weather
