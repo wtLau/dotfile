@@ -11,7 +11,6 @@ zstyle ':omz:update' frequency 13
 ## Plugins 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
-source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Sourcing zsh-vi-mode
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source $ZSH/oh-my-zsh.sh
@@ -48,8 +47,9 @@ alias weather='curl wttr.in/Vancouver\?0nqF' #current, narrow, quiet, no Follow
 alias cal='cal -A 2'
 
 # Starting Dir
-cd $DOCUMENTS
+#cd $DOCUMENTS
 
 # Broot
 source /Users/blau/.config/broot/launcher/bash/br
+clear
 
