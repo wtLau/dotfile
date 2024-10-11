@@ -6,6 +6,15 @@ This repository contains my dotfiles. Check them out! If you find something usef
 
 - [Hack Nerd Font](https://www.nerdfonts.com/font-downloads) (I use Comic Shanns Nerd Font)
 
+## Set up
+
+cd ~/dotfiles
+git init
+
+Create symlink:
+• After moving your .zshrc to ~/dotfiles, create a symlink so Zsh still finds it in the home directory:
+`ln -s ~/dotfiles/.zshrc ~/.zshrc`
+
 ## Steps to bootstrap a new Mac
 
 1. Install Apple's Command Line Tools, which are prerequisites for Git and Homebrew.
