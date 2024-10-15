@@ -39,12 +39,13 @@ DOCUMENTS=$HOME/Documents/
 alias nv="nvim"
 alias vscode="/opt/homebrew/bin/code"
 alias doc=$DOCUMENTS
-alias dotfile="~/.dotfiles/"
 
 # Filepath
 alias code="$HOME/Documents/Codebases/"
 # ZSH Config
-alias zc="cd $dotfile && nv ./.zshrc"
+export dotfile=~/dotfile  # Make sure to export the variable
+alias zc="nvim $dotfile/.zshrc"
+
 # NeoVim Config
 alias nc="cd ~/.config/nvim/lua && nv ."
 alias ohmyzsh="nv ~/.oh-my-zsh"
@@ -53,8 +54,9 @@ alias notes="cd ~/Documents/wtlau-obsidian/ && nv ."
 # Arcteryx
 alias arc="cd ~/Documents/Codebases/arc/"
 alias core="cd ~/Documents/Codebases/arc/core-ui/"
+alias content="cd ~/Documents/Codebases/arc/content-pages/"
 alias logs="cd ~/Documents/Codebases/arc/logs/"
-alias arcnpm= "source ~/.aws/switch-aws-profile.sh prod"
+alias arcnpm='eval "source ~/.aws/switch-aws-profile.sh prod"'
 
 ## Mini Apps
 # Weather
