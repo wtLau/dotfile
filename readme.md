@@ -8,12 +8,18 @@ This repository contains my dotfiles. Check them out! If you find something usef
 
 ## Set up
 
-cd ~/dotfiles
+```bash
+cd ~
+mkdir dotfile
+cd ~/dotfile
 git init
+```
 
-Create symlink:
-• After moving your .zshrc to ~/dotfiles, create a symlink so Zsh still finds it in the home directory:
-`ln -s ~/dotfiles/.zshrc ~/.zshrc`
+### Create symlink
+
+After moving your .zshrc to ~/dotfiles, create a symlink so Zsh still finds it in the home directory.
+
+`ln -s ~/dotfile/.zshrc ~/.zshrc`
 
 ## Steps to bootstrap a new Mac
 
