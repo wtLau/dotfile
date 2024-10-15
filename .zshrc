@@ -54,6 +54,7 @@ alias notes="cd ~/Documents/wtlau-obsidian/ && nv ."
 alias arc="cd ~/Documents/Codebases/arc/"
 alias core="cd ~/Documents/Codebases/arc/core-ui/"
 alias logs="cd ~/Documents/Codebases/arc/logs/"
+alias arcnpm= "source ~/.aws/switch-aws-profile.sh prod"
 
 ## Mini Apps
 # Weather
