@@ -3,6 +3,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load 
 ZSH_THEME="agnoster"
+#ZSH_THEME="robbyrussell"
 # Update oh my zsh automatically without asking
 zstyle ':omz:update' mode auto      
 # Uncomment the following line to change how often to auto-update (in days).
@@ -11,25 +12,11 @@ zstyle ':omz:update' frequency 13
 export DEFAULT_USER=$USER
 
 ## Plugins 
-## plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
-# Sourcing ZSH zsh-autosuggestions
-source $(brew --prefix)/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Sourcing ZSH zsh-autosuggestions
-source $(brew --prefix)/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Sourcing zsh-vi-mode
-source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+## Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
-## Python Env
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 ## Utils
 # Constants
@@ -60,7 +47,7 @@ alias arcnpm='eval "source ~/.aws/switch-aws-profile.sh prod"'
 
 ## Mini Apps
 # Weather
-alias weather='curl wttr.in/Vancouver\' #current, narrow, quiet, no Follow
+# alias weather='curl wttr.in/Vancouver\' #current, narrow, quiet, no Follow
 # Cal
 alias cal='cal -A 2'
 
@@ -70,4 +57,6 @@ alias cal='cal -A 2'
 #cd $DOCUMENTS
 
 # Bitbucket Arcteryx
-eval $(ssh-agent)
+if ! pgrep -u "$USER" ssh-agent >/dev/null; then
+  eval $(ssh-agent -s)
+fi
