@@ -2,12 +2,10 @@
 export ZSH="$HOME/.oh-my-zsh"
 # Theme
 # ZSH_THEME="agnoster"
-# ZSH_THEME="avit"
-ZSH_THEME="bira"
+ZSH_THEME="avit"
+# ZSH_THEME="dst"
 # ZSH_THEME="robbyrussell"
 zstyle ':omz:update' frequency 30 # Update every 30 days
-export DEFAULT_USER=$USER
-# export PS1='%1~ %# '   # Zsh
 
 ## Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
@@ -25,7 +23,7 @@ alias doc=$DOCUMENTS
 alias code="$HOME/Documents/Codebases/"
 # ZSH Config
 export dotfile=~/dotfile  # Make sure to export the variable
-alias zc="nvim $dotfile/.zshrc"
+alias zc="cd ~/dotfile && nv .zshrc"
 
 # NeoVim Config
 alias nc="cd ~/.config/nvim/lua && nv ."
