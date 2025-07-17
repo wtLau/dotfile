@@ -2,17 +2,12 @@
 export ZSH="$HOME/.oh-my-zsh"
 # Theme
 # ZSH_THEME="agnoster"
-ZSH_THEME="avit"
+# ZSH_THEME="avit"
+ZSH_THEME="bira"
 # ZSH_THEME="robbyrussell"
-# Update oh my zsh automatically without asking
-# zstyle ':omz:update' mode auto      
-zstyle ':omz:update' frequency 30
-# Remove user and host names
+zstyle ':omz:update' frequency 30 # Update every 30 days
 export DEFAULT_USER=$USER
 # export PS1='%1~ %# '   # Zsh
-
-## Plugins 
-# plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 ## Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
@@ -98,4 +93,5 @@ for cmd in nvm node npm npx; do
   eval "$cmd() { nvm_lazy_load; $cmd \"\$@\"; }"
 done
 
+## Plugins 
 plugins=(zsh-autosuggestions zsh-syntax-highlighting)
