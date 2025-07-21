@@ -1,0 +1,28 @@
+[aliases]
+notes = "cd ~/Documents/wtlau-obsidian/ && nvim main.md"
+cli = "cd ~/Documents/Codebases/wt-cli/ && nvim ."
+arc = "cd ~/Documents/Codebases/arc/"
+core = "cd ~/Documents/Codebases/arc/core-ui/ && nvim ."
+content = "cd ~/Documents/Codebases/arc/content-pages/ && nvim ."
+swag = "cd ~/Documents/Codebases/arc/web-api-gateway/ && nvim ."
+dam = "cd ~/Documents/Codebases/arc/dam-connector/ && nvim ."
+cms = "cd ~/Documents/Codebases/arc/sanity-cms/ && nvim ."
+query = "cd ~/Documents/Codebases/arc/sanity-content/ && nvim ."
+nav = "cd ~/Documents/Codebases/arc/arcteryx-navigation/ && nvim ."
+arcnpm = "source ~/.aws/switch-aws-profile.sh prod"
+cal = "cal -A 2"
+
+# Directory
+
+# Filepath
+code = "cd ~/Documents/Codebases/"
+
+# Configs
+# wt-cli Config
+wc = "cd ~/dotfile/ && nvim cli-aliases.toml"
+# ZSH Config
+zc = "cd ~/dotfile/ && nvim .zshrc"
+# NeoVim Config
+nc = "cd ~/.config/nvim/lua && nvim ."
+# Oh My Zsh 
+ohmyzsh = "nvim ~/.oh-my-zsh"

@@ -20,14 +20,14 @@ alias vscode="/opt/homebrew/bin/code"
 alias doc=$DOCUMENTS
 
 # Filepath
-alias code="$HOME/Documents/Codebases/"
-# ZSH Config
-export dotfile=~/dotfile  # Make sure to export the variable
-alias zc="cd ~/dotfile && nv .zshrc"
-
-# NeoVim Config
-alias nc="cd ~/.config/nvim/lua && nv ."
-alias ohmyzsh="nv ~/.oh-my-zsh"
+# alias code="$HOME/Documents/Codebases/"
+# # ZSH Config
+# export dotfile=~/dotfile  # Make sure to export the variable
+# alias zc="cd ~/dotfile && nv .zshrc"
+#
+# # NeoVim Config
+# alias nc="cd ~/.config/nvim/lua && nv ."
+# alias ohmyzsh="nv ~/.oh-my-zsh"
 
 ## Notes
 # alias notes="cd ~/Documents/wtlau-obsidian/ && nv ."
@@ -42,25 +42,25 @@ alias ohmyzsh="nv ~/.oh-my-zsh"
 
 ## Personalized CLI
 # Define aliases in a simple format (array of key-value pairs)
-ALIASES=(
-    "notes:cd ~/Documents/wtlau-obsidian/ && nv main.md"
-    "arc:cd ~/Documents/Codebases/arc/"
-    "core:cd ~/Documents/Codebases/arc/core-ui/ && nv ."
-    "nav:cd ~/Documents/Codebases/arc/arcteryx-navigation/ && nv ."
-    "cms:cd ~/Documents/Codebases/arc/sanity-cms/ && nv ."
-    "dam:cd ~/Documents/Codebases/arc/dam-connector/ && nv ."
-    "content:cd ~/Documents/Codebases/arc/content-pages/ && nv ."
-    "swag:cd ~/Documents/Codebases/arc/web-api-gateway/ && nv ."
-    "arcnpm:eval \"source ~/.aws/switch-aws-profile.sh prod\""
-    "cal: cal -A 2" #Calendar
-)
+# ALIASES=(
+#     "nt:cd ~/Documents/wtlau-obsidian/ && nv main.md"
+#     "arc:cd ~/Documents/Codebases/arc/"
+#     "core:cd ~/Documents/Codebases/arc/core-ui/ && nv ."
+#     "nav:cd ~/Documents/Codebases/arc/arcteryx-navigation/ && nv ."
+#     "cms:cd ~/Documents/Codebases/arc/sanity-cms/ && nv ."
+#     "dam:cd ~/Documents/Codebases/arc/dam-connector/ && nv ."
+#     "content:cd ~/Documents/Codebases/arc/content-pages/ && nv ."
+#     "swag:cd ~/Documents/Codebases/arc/web-api-gateway/ && nv ."
+#     "arcnpm:eval \"source ~/.aws/switch-aws-profile.sh prod\""
+#     "cal: cal -A 2" #Calendar
+# )
 
 # Loop through the array and create aliases dynamically
-for entry in "${ALIASES[@]}"; do
-    KEY="${entry%%:*}"  # Extract command name
-    VALUE="${entry#*:}"  # Extract command value
-    alias "$KEY"="$VALUE"
-done
+# for entry in "${ALIASES[@]}"; do
+#     KEY="${entry%%:*}"  # Extract command name
+#     VALUE="${entry#*:}"  # Extract command value
+#     alias "$KEY"="$VALUE"
+# done
 
 # Define wt function
 # wt() {
