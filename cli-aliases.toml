@@ -1,5 +1,5 @@
 [aliases]
-notes = "cd ~/Documents/wtlau-obsidian/ && nvim main.md"
+notes = "cd ~/Documents/wtlau-obsidian/ && nvim notes/main.md"
 cli = "cd ~/Documents/Codebases/wt-cli/ && nvim ."
 arc = "cd ~/Documents/Codebases/arc/"
 core = "cd ~/Documents/Codebases/arc/core-ui/ && nvim ."
