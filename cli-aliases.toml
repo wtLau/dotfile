@@ -1,7 +1,7 @@
+# Arcteryx
 [aliases]
-notes = "cd ~/Documents/wtlau-obsidian/ && nvim notes/main.md"
-cli = "cd ~/Documents/Codebases/wt-cli/ && nvim ."
 arc = "cd ~/Documents/Codebases/arc/"
+jshelper = "cd ~/Documents/Codebases/arc/js-helpers/ && nvim ."
 core = "cd ~/Documents/Codebases/arc/core-ui/ && nvim ."
 content = "cd ~/Documents/Codebases/arc/content-pages/ && nvim ."
 swag = "cd ~/Documents/Codebases/arc/web-api-gateway/ && nvim ."
@@ -9,8 +9,13 @@ dam = "cd ~/Documents/Codebases/arc/dam-connector/ && nvim ."
 cms = "cd ~/Documents/Codebases/arc/sanity-cms/ && nvim ."
 query = "cd ~/Documents/Codebases/arc/sanity-content/ && nvim ."
 nav = "cd ~/Documents/Codebases/arc/arcteryx-navigation/ && nvim ."
+gateway = "cd ~/Documents/Codebases/arc/application-gateway/ && nvim ."
 arcnpm = "source ~/.aws/switch-aws-profile.sh prod"
+
+# Personal
+notes = "cd ~/Documents/wtlau-obsidian/ && nvim notes/main.md"
 cal = "cal -A 2"
+cli = "cd ~/Documents/Codebases/wt-cli/ && nvim ."
 
 # Directory
 
